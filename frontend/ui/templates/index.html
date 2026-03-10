@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marketing Department | Agency</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <h1>THE AGENCY</h1>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">🌓</button>
+                <div class="status">
+                    <div class="status-dot"></div>
+                    <span>Marketing Department Online</span>
+                </div>
+            </div>
+        </header>
+
+        <main id="chat-container">
+            <div class="welcome-message">
+                <h2>Welcome to the Marketing War Room</h2>
+                <p>Lead by your <strong>Marketing Manager</strong>, our specialists are ready to build your growth engine.</p>
+                <div class="agent-pills">
+                    <span class="pill">ASO</span>
+                    <span class="pill">Growth</span>
+                    <span class="pill">Social</span>
+                    <span class="pill">Content</span>
+                    <span class="pill">SEO</span>
+                </div>
+            </div>
+            <div id="messages"></div>
+        </main>
+
+        <footer>
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Give your department a mission..." rows="1"></textarea>
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
