@@ -1,0 +1,36 @@
+{
+  "executive_summary": {
+    "headline": "Thailand crosses 32.8M arrivals, driven by strong ASEAN and India recovery despite China lag.",
+    "top_3_concentration_pct": 35.0,
+    "top_3_markets": ["Malaysia", "China", "South Korea"]
+  },
+  "key_insights":[
+    "China arrivals fell -34% YoY, heavily impacting overall East Asia performance.",
+    "Top-3 origins (Malaysia, China, South Korea) account for 35% of all arrivals.",
+    "Agoda is successfully gaining market share in key competitive markets: India and China."
+  ],
+  "outliers_and_anomalies":[
+    {
+      "market": "Iraq",
+      "stat": "+178% YoY",
+      "action": "Exclude from main briefing",
+      "reason": "Base volume is too low (1,000 to 2,780) to be statistically relevant for executive focus."
+    },
+    {
+      "market": "India",
+      "stat": "+25% YoY Market / +50% YoY Agoda",
+      "action": "Highlight",
+      "reason": "High-volume market demonstrating exceptional Agoda over-performance."
+    }
+  ],
+  "qa_talking_points":[
+    {
+      "question": "Thailand just crossed 30 million arrivals. How does Agoda's growth compare to the overall market recovery?",
+      "answer": "While the market recovered to 32.8M, Agoda outpaced total market growth in 6 of the top 10 origin markets, notably over-indexing in India."
+    },
+    {
+      "question": "China's recovery seems to be slower than expected. Is Agoda losing ground there?",
+      "answer": "Actually, no. While the overall Chinese outbound market to Thailand dropped 34% YoY, Agoda's bookings only declined 5%. We are actively capturing a larger share of the travelers who are still choosing to fly."
+    }
+  ]
+}

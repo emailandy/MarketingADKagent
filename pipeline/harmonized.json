@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "destination": "Thailand",
+    "period": "2025-Jan-Dec",
+    "total_arrivals": 32800000,
+    "total_origins_tracked": 91
+  },
+  "merged_data":[
+    {
+      "origin": "China",
+      "official_arrivals_prev": 5303030,
+      "official_arrivals_curr": 3500000,
+      "yoy_market_growth_pct": -34.0,
+      "agoda_bookings_prev": 400000,
+      "agoda_bookings_curr": 380000,
+      "yoy_agoda_growth_pct": -5.0,
+      "agoda_gaining_share": true
+    },
+    {
+      "origin": "India",
+      "official_arrivals_prev": 1600000,
+      "official_arrivals_curr": 2000000,
+      "yoy_market_growth_pct": 25.0,
+      "agoda_bookings_prev": 200000,
+      "agoda_bookings_curr": 300000,
+      "yoy_agoda_growth_pct": 50.0,
+      "agoda_gaining_share": true
+    },
+    {
+      "origin": "Iraq",
+      "official_arrivals_prev": 1000,
+      "official_arrivals_curr": 2780,
+      "yoy_market_growth_pct": 178.0,
+      "agoda_bookings_prev": 50,
+      "agoda_bookings_curr": 120,
+      "yoy_agoda_growth_pct": 140.0,
+      "agoda_gaining_share": false
+    }
+  ]
+}

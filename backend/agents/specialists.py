@@ -3,17 +3,13 @@ from google.adk.tools.google_search_tool import google_search
 from google.adk.tools.google_maps_grounding_tool import google_maps_grounding
 from google.genai import types
 
-# Common config for Gemini 3.1 Pro with Thinking
-gemini_31_config = types.GenerateContentConfig(
-    thinking_config=types.ThinkingConfig(
-        thinking_level=types.ThinkingLevel.LOW
-    )
-)
+# Common config for Gemini 3 Flash (Optimized for Speed)
+gemini_3_flash_config = types.GenerateContentConfig()
 
 # App Store Optimizer
 app_store_optimizer = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=gemini_31_config,
+    model='gemini-3-flash-preview',
+    generate_content_config=gemini_3_flash_config,
     name='app_store_optimizer',
     output_key='aso_strategy_report',
     description='Expert app store marketing specialist focused on ASO and conversion.',
@@ -28,8 +24,8 @@ app_store_optimizer = Agent(
 
 # Growth Hacker
 growth_hacker = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=gemini_31_config,
+    model='gemini-3-flash-preview',
+    generate_content_config=gemini_3_flash_config,
     name='growth_hacker',
     output_key='growth_hacking_plan',
     description='Expert growth strategist specializing in rapid user acquisition.',
@@ -44,8 +40,8 @@ growth_hacker = Agent(
 
 # Social Media Strategist
 social_media_strategist = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=gemini_31_config,
+    model='gemini-3-flash-preview',
+    generate_content_config=gemini_3_flash_config,
     name='social_media_strategist',
     output_key='social_media_roadmap',
     description='Expert social media strategist for professional platforms.',
@@ -60,8 +56,8 @@ social_media_strategist = Agent(
 
 # Content Creator
 content_creator = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=gemini_31_config,
+    model='gemini-3-flash-preview',
+    generate_content_config=gemini_3_flash_config,
     name='content_creator',
     output_key='content_strategy_brief',
     description='Expert content strategist and storyteller.',
@@ -75,8 +71,8 @@ content_creator = Agent(
 
 # SEO Specialist
 seo_specialist = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=gemini_31_config,
+    model='gemini-3-flash-preview',
+    generate_content_config=gemini_3_flash_config,
     name='seo_specialist',
     output_key='seo_audit_and_plan',
     description='Expert search engine optimization strategist.',

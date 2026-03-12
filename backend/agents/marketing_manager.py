@@ -9,15 +9,13 @@ from .specialists import (
     content_creator,
     seo_specialist
 )
+from .data_analyst import data_analyst
+from .titan_analyst import titan_analyst
 
 # Marketing Manager (Orchestrator)
 marketing_manager = Agent(
-    model='gemini-3.1-pro-preview',
-    generate_content_config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(
-            thinking_level=types.ThinkingLevel.LOW
-        )
-    ),
+    model='gemini-3-flash-preview',
+    generate_content_config=types.GenerateContentConfig(),
     name='marketing_manager',
     description='Professional Marketing Department Orchestrator.',
     instruction="""
@@ -30,6 +28,8 @@ marketing_manager = Agent(
     3. Social Media Strategist: For brand authority and community building.
     4. Content Creator: For storytelling and multi-platform content.
     5. SEO Specialist: For sustainable organic search growth.
+    6. Data Analyst: For deep insights from our BigQuery OTA performance datasets (ROAS, budget variance, etc.).
+    7. Titan Analyst: For analysis of the TITAN pipeline (Thailand Demo) including government tourism data, internal Agoda bookings, and harmonized growth metrics.
     
     When you receive a request:
     - Analyze the goal and identify which specialist(s) are needed.
@@ -42,7 +42,9 @@ marketing_manager = Agent(
         growth_hacker,
         social_media_strategist,
         content_creator,
-        seo_specialist
+        seo_specialist,
+        data_analyst,
+        titan_analyst
     ],
     tools=[google_search, google_maps_grounding]
 )
