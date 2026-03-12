@@ -17,6 +17,10 @@ A high-performance, multi-agent marketing agency built with the **Google Agent D
 - **Persistent Memory**: Uses session state to ensure agents remember sub-task outputs across multiple turns.
 - **Premium UI**: A sleek, glassmorphism chat interface with light/dark theme support.
 
+## 📊 Data Foundation
+This agency is powered by a multi-source BigQuery data layer that correlates internal Agoda performance with official travel statistics.
+- **Detailed Schema**: See [DATA_FOUNDATION.md](DATA_FOUNDATION.md) for full table definitions and join logic.
+
 ## 🏗️ Architecture
 
 The system follows a hierarchical multi-agent pattern:
